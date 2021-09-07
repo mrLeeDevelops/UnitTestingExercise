@@ -71,23 +71,26 @@ namespace UnitTestingExercise.Tests
         public void YourMethodName()
         {
             //Arrange
-            //var test5 = new UnitTestMethods();
+            string expected = "Smooth";
+            var test5 = new UnitTestMethods();
 
             //Act
-            //var actual = test5.UnitTestMethods
-
+            string actual = test5.YourMethodName();
             //Assert
-            //Assert.Equal(expected, actual);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void YourMethodName2()
         {
             //Arrange
+            string expected = "C. L. Smooth";
+            var test6 = new UnitTestMethods();
 
             //Act
-
+            string actual = test6.YourMethodName2();
             //Assert
+            Assert.Equal(expected, actual);
         }
     }
 }
